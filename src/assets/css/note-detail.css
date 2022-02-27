@@ -1,0 +1,96 @@
+.note-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.note-detail-ct {
+  height: 100%;
+}
+
+.note-empty {
+  font-size: 50px;
+  color: #ccc;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.note-bar {
+  padding: 4px 20px;
+  border-bottom: 1px solid #aeb5bd;
+  font-size: 5px;
+}
+.note-bar-time {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+.note-bar-time > span {
+  margin-right: 20px;
+}
+.note-bar-btn {
+  display: flex;
+  padding: 4px 20px;
+  margin-left: auto;
+  border-top: 1px solid #eee;
+}
+.note-bar-btn > span {
+  margin-right: 100px;
+  padding: 3px;
+}
+.note-bar-btn > span > .icon {
+  margin-right: 3px;
+}
+.note-bar-btn > span:hover {
+  background: rgb(151, 151, 151);
+  color: white;
+}
+span {
+  font-size: 18px;
+  color: #999;
+  margin-right: 4px;
+}
+
+.note-title > input,
+.note-bar > span {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.note-title > input {
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  padding: 15px 40px;
+}
+
+.editor {
+  height: calc(100% - 170px);
+  position: relative;
+}
+textarea,
+.preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "Monaco", courier, monospace;
+}
+
+code {
+  color: #f66;
+}
+
+#note {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+  flex: 1;
+}
